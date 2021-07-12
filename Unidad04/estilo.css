@@ -1,10 +1,45 @@
 /* Probando distintos selectores */
-
-nombreInicio{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-titulos{
+/*Estilos para menu de navegacion*/
+.menuNavegacion{
+    list-style-type: none;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+    background-color: darkgrey;
+}
+.menuNavegacion li{
+    float: right;
+}
+.menuNavegacion li a{
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    
+}
+.menuNavegacion li a:hover{
+    background-color: darkgreen;
+}
+/*Fin menu de navegacion*/
+
+/*
+li a{
+    
+}
+*/
+
+
+.nombreInicio{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+.titulos{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
