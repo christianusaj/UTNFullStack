@@ -2,44 +2,100 @@ body{
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    margin-bottom: 0px;
+    font-size: 62.5%;
 }
 
 /*Estilos para menu de navegacion*/
+.barraNavegacion{
+    position: sticky;
+    top: 0;
+}
+
 .menuNavegacion{
     list-style-type: none;
     overflow: hidden;
     margin:0;
     padding: 0;
-    background-color: darkgrey;
+    background-color: rgb(66, 66, 66);
 }
 .menuNavegacion li{
     float: right;
 }
 .menuNavegacion li a{
     text-decoration: none;
-    padding: 8px;
+    padding: 10px;
     display: block;
-    
+    font-size: 1.25rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;   
 }
 .menuNavegacion li a:hover{
-    background-color: darkgreen;
+    background-color: rgb(22, 22, 22);
 }
 /*Fin menu de navegacion*/
 
-/*
-li a{
+/*Estilo para el contenedor de textos*/
+.cajaDescripcion{
+    margin: 5px;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-style:solid;
+    border-color: coral;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+/*Estilo para las listas dentro del contenedor*/
+.cajaDescripcion li{
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+}
+
+/*Estilo para la seccion formulario*/
+.seccionContacto{
     
 }
-*/
-
 
 .nombreInicio{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
+    font-size: 1.7rem;
 }
 
 .titulos{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    font-size: 1.7rem;
+    margin-left: 10px;
+    text-align: center;
 }
 
+.tituloExperiencia{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    text-align: center;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+}
+
+footer{
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+    background-color: rgb(66, 66, 66);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+footer h6{
+    margin: 8px;
+}
