@@ -59,8 +59,58 @@ body{
 
 /*Estilo para la seccion formulario*/
 .seccionContacto{
-    
+    background-color: rgb(233, 233, 233);
+    width: 30%;
+    margin-left: auto;    
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
+
+input{
+    width: 95%;
+    margin-left: 5px;
+    margin-right: auto;
+    padding: 5px;
+    /*Hecho un poco a ojo porque no se ajusta correctamente al div :p */
+}
+select{
+    margin-left: 5px;
+    padding: 5px;
+}
+textarea{
+    width: 95%;
+    margin-left: 5px;
+    margin-right: auto;
+    padding: 5px;
+}
+select{
+    width: 40%;
+    margin-left: 5px;
+    margin-right: auto;
+}
+input[type=reset]{
+    width: 100px;
+    border: none;
+    padding: 5px;
+    background-color: grey;
+    color: white;
+}
+input[type=submit]{
+    width: 100px;
+    border: none;
+    padding: 5px;
+    background-color: grey;
+    color: white;
+}
+
+.seccionContacto p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
+/*Fin seccion de formulario*/
 
 .nombreInicio{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -96,6 +146,17 @@ footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2rem;
 }
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+}
 footer h6{
     margin: 8px;
+    color: white;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    text-align: center; 
 }
