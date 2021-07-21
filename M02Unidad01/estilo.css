@@ -1,0 +1,167 @@
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-size: 62.5%;
+}
+
+/*Estilos para menu de navegacion*/
+.barraNavegacion{
+    position: sticky;
+    top: 0;
+}
+
+.menuNavegacion{
+    list-style-type: none;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+    background-color: rgb(66, 66, 66);
+}
+.menuNavegacion li{
+    float: right;
+}
+.menuNavegacion li a{
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 1.25rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;   
+}
+.menuNavegacion li a:hover{
+    background-color: rgb(22, 22, 22);
+}
+/*Fin menu de navegacion*/
+
+/*Estilo para el contenedor de textos*/
+.cajaDescripcion{
+    margin: 5px;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-style:solid;
+    border-color: coral;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+/*Estilo para las listas dentro del contenedor*/
+.cajaDescripcion li{
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+}
+
+/*Estilo para la seccion formulario*/
+.seccionContacto{
+    background-color: rgb(233, 233, 233);
+    width: 30%;
+    margin-left: auto;    
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 1px;
+    /*Box Shadow para tarea Unidad 1 modulo 2*/
+    box-shadow: 5px 5px 20px 2px #888888;
+}
+
+input{
+    width: 95%;
+    margin-left: 5px;
+    margin-right: auto;
+    padding: 5px;
+    /*Hecho un poco a ojo porque no se ajusta correctamente al div :p */
+}
+select{
+    margin-left: 5px;
+    padding: 5px;
+}
+textarea{
+    width: 95%;
+    margin-left: 5px;
+    margin-right: auto;
+    padding: 5px;
+}
+select{
+    width: 40%;
+    margin-left: 5px;
+    margin-right: auto;
+}
+input[type=reset]{
+    width: 100px;
+    border: none;
+    padding: 5px;
+    background-color: grey;
+    color: white;
+}
+input[type=submit]{
+    width: 100px;
+    border: none;
+    padding: 5px;
+    background-color: grey;
+    color: white;
+}
+
+.seccionContacto p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
+/*Fin seccion de formulario*/
+
+.nombreInicio{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7rem;
+}
+
+.titulos{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.tituloExperiencia{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    text-align: center;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+}
+
+footer{
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+    background-color: rgb(66, 66, 66);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+}
+footer h6{
+    margin: 8px;
+    color: white;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    text-align: center; 
+}
+
+

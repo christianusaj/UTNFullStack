@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> 
+    <title>Iniciando HTML</title>
+</head>
+<body>
+    <!--- Intentando hacer menu de navegacion. Aun por mejorar-->
+    <div class="barraNavegacion" id="inicio">
+        <ol class="menuNavegacion">
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#aptitud">Aptitudes</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+        </ol>
+    </div>
+    <h1 class="nombreInicio"> Christian Usaj PH</h1>
+    <img src="img/20130504164723.JPG" width="100%" alt="Cafayate">
+    <h2 class="titulos" id="experiencia">Experiencia</h2>
+    <div class="cajaDescripcion">
+        <p><span class="tituloExperiencia">Composicion:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolor totam non.</p>
+    </div>
+    <div class="cajaDescripcion">
+        <p><span class="tituloExperiencia">Post edición:</span> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+    </div>
+    <div class="cajaDescripcion">
+        <p><span class="tituloExperiencia">Fotografía en estudio:</span> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+    </div>
+    <p></p>
+    <h2 class="titulos" id="formacion">Mi formación</h2>
+    <div class="cajaDescripcion">
+        <ul>
+            <li>2019: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>2018: Aliquam praesentium exercitationem repellendus veritatis.</li>
+            <li>2010-2015: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo fugit.</li>
+        </ul>
+    </div>
+    <p></p>
+    <h2 class="titulos" id="aptitud">Mis aptitudes</h2>
+    <div class="cajaDescripcion">
+        <ul>
+            <li>Photoshop</li>
+            <li>Lightroom</li>
+        </ul>
+    </div>
+    <h2 class="titulos">Domicilio</h2>
+    <div class="cajaDescripcion">
+        <p>Navarro 5000 C1419CMB - Ciudad de Buenos Aires</p>
+    </div>
+    <p></p>
+    <div class="seccionContacto" id="contacto">
+        <h4>Contactame</a></h4>
+        <form action="gracias.html">
+            <p>Nombre y apellido</p>
+            <input  type="text">
+            <p>Domicilio</p>
+            <input  type="text">
+            <p>¿Cómo me conociste?</p>
+            <select name="conocido" id="seleccion">
+                <option value="google">Google</option>
+                <option value="buscador">Otro buscador</option>
+                <option value="ig">Instagram</option>
+                <option value="tw">Twitter</option>
+                <option value="otro">Otra opción</option>
+            </select>
+            <p>Email</p>
+            <input type="text">
+            <p>Mensaje</p>
+            <textarea name="mensaje" id="texto" cols="30" rows="10"></textarea>
+            <p></p>
+            <input type="reset" value="Borrar">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    
+</body>
+<footer><h6> Copyright Christian Usaj 2021</h6></footer>
+</html>
