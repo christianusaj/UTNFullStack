@@ -1,0 +1,136 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+.vinculo a{
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    font-size: 3em;
+    text-decoration: none;
+    color: rgb(65, 64, 64);
+}
+
+.vinculo a:hover{
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    font-size: 3.05em;
+    text-decoration: none;
+    color: rgb(175, 174, 174);
+}
+
+.vinculo a:active{
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    font-size: 3.01em;
+    text-decoration: none;
+    color: rgb(65, 64, 64);
+}
+
+.main{
+    margin: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgb(231, 231, 231);
+    padding: 1em;
+    text-align: center;
+}
+
+.exterior1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    background-color: rgb(231, 231, 231);
+}
+
+.exterior2{
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    background-color: rgb(231, 231, 231);
+}
+
+.exterior3{
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: black;
+    align-items: center;
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: auto;
+    padding: 0;
+    background-color: rgb(231, 231, 231);
+}
+
+/*DUDAS: 
+-Esta bien hacer de esta forma que ocupen todo el alto cada caja? 
+Usar 33.33% es muy aproximado pero igual es inexacto. Hay otra forma mas precisa?
+-Como alinear verticalmente los numeros dentro de las cajas*/
+
+#interior1{
+    background-color: red;
+    width: 33%;
+    height: 33.33%;
+    margin: 0px;
+    padding: 10px;
+    font-size: 2.5em;
+    text-align: center;
+}
+#interior2{
+    background-color: blue;
+    width: 33%;
+    height: 33.33%;
+    margin: 0px;
+    padding: 10px;
+    font-size: 2.5em;
+    text-align: center;
+}
+#interior3{
+    background-color: green;
+    width: 33%;
+    height: 33.33%;
+    margin: 0px;
+    padding: 10px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#interior3-1{
+    background-color: red;
+    width: 15%;
+    margin: 0px;
+    padding: 10px;
+    font-size: 2.5em;
+    text-align: center;
+}
+#interior3-2{
+    background-color: blue;
+    width: 15%;
+    margin: 0px;
+    padding: 10px;
+    font-size: 2.5em;
+    text-align: center;
+}
+#interior3-3{
+    background-color: green;
+    width: 15%;
+    margin: 0px;
+    padding: 10px;
+    font-size: 2.5em;
+    text-align: center;
+}
