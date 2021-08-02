@@ -36,3 +36,22 @@ aside {
 	float: right;
 	width: 190px;
 }
+
+@media screen and (max-width: 800px){
+	#contenedor {
+		width: 500px;
+	}
+	aside {
+		float: left;
+		width: auto;
+		padding: 5px;
+	}
+	section {
+		margin:0;
+		width: auto;
+		padding: 5px;
+	}
+	nav {
+		width: 100%;
+	}
+}
