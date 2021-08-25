@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function comoViajo() {
+            var distancia;
+            document.getElementById("valorCaja").innerHTML=distancia;
+            if (distancia>=0 && distancia<=1000){
+                document.getElementById("resultado").innerHTML="Mejor caminando";
+            } else if (distancia>=1001 && distancia<=10000){
+                document.getElementById("resultado").innerHTML="Mejor en bici";
+            } else if (distancia>=10001 && distancia<=30000){
+                document.getElementById("resultado").innerHTML="Mejor en Colectivo";
+            } else if (distancia>=30000 && distancia<=100000){
+                document.getElementById("resultado").innerHTML="Mejor en auto";
+            } else if (distancia>=100001){
+                document.getElementById("resultado").innerHTML="Mejor en avion";
+            } else {
+                document.getElementById("resultado").innerHTML="Error en los datos";
+            }
+        }
+        </script>
+    <title>JS</title>
+</head>
+<body>
+    <form action="">
+        <label for="lacaja">Ingresá distancia</label>
+        <input type="text" id="caja" name="lacaja">
+    </form>
+    <button onclick="comoViajo()">Calcular</button>
+<p id="resultado"></p>
+</body>
+</html>
