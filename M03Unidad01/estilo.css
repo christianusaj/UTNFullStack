@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+
+h1.tituloPrincipal {
+    font-family: 'Cookie', cursive; 
+    text-align: center;
+    font-size: 4rem; 
+    font-weight: normal;
+    border-bottom: solid;
+    border-width: 0.5px ;
+    border-color: rgb(199, 199, 199);
+    padding: 1rem 1rem 4rem 1rem;
+    margin: 0;
+}
+
