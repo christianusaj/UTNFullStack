@@ -7,7 +7,7 @@
     <script>
         function comoViajo() {
             var distancia;
-            document.getElementById("valorCaja").innerHTML=distancia;
+            distancia=document.getElementById("caja").value;
             if (distancia>=0 && distancia<=1000){
                 document.getElementById("resultado").innerHTML="Mejor caminando";
             } else if (distancia>=1001 && distancia<=10000){
