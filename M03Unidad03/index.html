@@ -5,32 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
+        
         function comoViajo() {
             var distancia;
             distancia=document.getElementById("caja").value;
             if (distancia>=0 && distancia<=1000){
-                document.getElementById("resultado").innerHTML="Mejor caminando";
+                document.getElementById("resultado").innerHTML="Esa distancia es mejor hacerla caminando";
             } else if (distancia>=1001 && distancia<=10000){
-                document.getElementById("resultado").innerHTML="Mejor en bici";
+                document.getElementById("resultado").innerHTML="Esa distancia es mejor hacerla en bici";
             } else if (distancia>=10001 && distancia<=30000){
-                document.getElementById("resultado").innerHTML="Mejor en Colectivo";
+                document.getElementById("resultado").innerHTML="Esa distancia es mejor hacerla en Colectivo";
             } else if (distancia>=30000 && distancia<=100000){
-                document.getElementById("resultado").innerHTML="Mejor en auto";
+                document.getElementById("resultado").innerHTML="Esa distancia es mejor hacerla en auto";
             } else if (distancia>=100001){
-                document.getElementById("resultado").innerHTML="Mejor en avion";
+                document.getElementById("resultado").innerHTML="Esa distancia es mejor hacerla en avion";
             } else {
                 document.getElementById("resultado").innerHTML="Error en los datos";
             }
+        }
+        const numeros=[];
+        function agregar(){
+            numeros.push(document.getElementById("cajaArray").value);
+            document.getElementById("arrays").innerHTML=numeros;
+            document.getElementById("cajaArray").value=null;
+        }
+        function cualMayor(){
+            document.getElementById("elMayor").innerHTML='El numero mayor es ' + Math.max.apply(null,numeros);
+        }
+        function recomenzar(){
+            document.getElementById("elMayor").innerHTML=null;
+            document.getElementById("cajaArray").value=null;
+            document.getElementById("arrays").innerHTML=null;
+            numeros.length=0;
         }
         </script>
     <title>JS</title>
 </head>
 <body>
-    <form action="">
-        <label for="lacaja">Ingresá distancia</label>
-        <input type="text" id="caja" name="lacaja">
-    </form>
+    <h2>Determinador de medios de transporte</h2>
+
+    <label for="lacaja">Ingresá distancia</label>
+    <input type="text" id="caja" name="lacaja">
+
     <button onclick="comoViajo()">Calcular</button>
-<p id="resultado"></p>
+    <p id="resultado"></p>
+
+    <h2>Determinador de numero mayor</h2>
+
+    <label for="laCajaArray">Ingresá el numero</label>
+    <input type="text" id="cajaArray" name="laCajaArray">
+
+    <button onclick="agregar()">Agregar</button>
+    <button onclick="recomenzar()">Resetear</button>
+    <button onclick="cualMayor()">Calcular mayor</button>
+
+    <p id="arrays" style="margin: 5;"></p>
+    <p id="elMayor" style="margin: 5;"></p>
 </body>
 </html>
