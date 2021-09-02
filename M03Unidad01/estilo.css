@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 body{
     margin: 0;
 }
@@ -7,10 +11,46 @@ h1.tituloPrincipal {
     text-align: center;
     font-size: 4rem; 
     font-weight: normal;
+    padding: 1rem 1rem 0rem 1rem;
+    margin: 0;
+}
+h2.subtituloPrincipal {
+    font-family: 'Cookie', cursive; 
+    text-align: center; 
+    font-weight: normal;
     border-bottom: solid;
     border-width: 0.5px ;
     border-color: rgb(199, 199, 199);
-    padding: 1rem 1rem 4rem 1rem;
+    padding: 0rem 1rem 3rem 1rem;
     margin: 0;
 }
 
+nav{
+    display: flex;
+    justify-content: center;
+}
+nav ol{
+    padding: 0;
+    list-style-type: none;
+    display: block;
+    overflow: hidden;
+}
+
+nav li{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    float: left;
+}
+
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 20% 0 20%;
+    flex-direction: row;
+}
+
+.main{
+    flex: 80%;
+}
+.lateral{
+    flex: 20%;
+}
