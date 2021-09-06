@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+   
+    <div class="exterior2" id="exterior">
+        <div id="interior1" onclick="cambiarColor('red')"><p></p></div>
+        <div id="interior2" onclick="cambiarColor('blue')"><p></p></div>
+        <div id="interior3" onclick="cambiarColor('green')"><p></p></div>
+    </div>
+
+    <div class="areaTexto">
+        <textarea name="areaDeTexto" id="contador" cols="30" rows="10"></textarea>
+        <p>Esta área de texto tiene: <span id="cantidadLetras"></span> caracteres.</p>
+    </div>
+
+    <script>
+        let color;
+        function cambiarColor(color){
+            let colorDiv= document.getElementById('exterior');
+            colorDiv.style.backgroundColor=color;
+        }
+
+        let letras=document.getElementById("contador");
+        letras.addEventListener("keypress",function()
+        {
+            let numero=letras.value;
+            document.getElementById('cantidadLetras').innerHTML=numero.length+1;
+        });
+
+    </script>
+</body>
+</html>
