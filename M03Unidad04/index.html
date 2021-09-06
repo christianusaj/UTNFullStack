@@ -21,18 +21,21 @@
     </div>
 
     <script>
+        /*cambio de color*/
         let color;
         function cambiarColor(color){
             let colorDiv= document.getElementById('exterior');
             colorDiv.style.backgroundColor=color;
         }
 
+        /*contador de caracteres*/
         let letras=document.getElementById("contador");
-        letras.addEventListener("keypress",function()
+        letras.addEventListener("keyup",function()
         {
             let numero=letras.value;
-            document.getElementById('cantidadLetras').innerHTML=numero.length+1;
+            document.getElementById('cantidadLetras').innerHTML=numero.length;
         });
+
 
     </script>
 </body>
