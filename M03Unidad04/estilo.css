@@ -20,6 +20,7 @@ html, body{
     height: 45%;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 10px;
     padding: 0;
     background-color: rgb(255, 255, 255);
 }
@@ -33,6 +34,7 @@ html, body{
     font-size: 2.5em;
     text-align: center;
     border-style: solid;
+    cursor:pointer;
 }
 #interior2{
     background-color: blue;
@@ -43,6 +45,7 @@ html, body{
     font-size: 2.5em;
     text-align: center;
     border-style: solid;
+    cursor:pointer;
 }
 #interior3{
     background-color: green;
@@ -53,10 +56,16 @@ html, body{
     font-size: 2.5em;
     text-align: center;
     border-style: solid;
+    cursor:pointer;
 }
 .areaTexto{
     text-align: center;
 }
 #contador{
     resize: none;
+}
+
+#divAprobados{
+    text-align: center;
+    margin-top: 50px;
 }

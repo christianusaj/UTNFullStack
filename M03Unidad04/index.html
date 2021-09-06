@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
+    
 </head>
 <body>
    
@@ -19,24 +20,10 @@
         <textarea name="areaDeTexto" id="contador" cols="30" rows="10"></textarea>
         <p>Esta área de texto tiene: <span id="cantidadLetras"></span> caracteres.</p>
     </div>
+    
+    <div id="divAprobados">
 
-    <script>
-        /*cambio de color*/
-        let color;
-        function cambiarColor(color){
-            let colorDiv= document.getElementById('exterior');
-            colorDiv.style.backgroundColor=color;
-        }
-
-        /*contador de caracteres*/
-        let letras=document.getElementById("contador");
-        letras.addEventListener("keyup",function()
-        {
-            let numero=letras.value;
-            document.getElementById('cantidadLetras').innerHTML=numero.length;
-        });
-
-
-    </script>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
