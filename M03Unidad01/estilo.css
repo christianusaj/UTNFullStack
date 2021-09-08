@@ -60,6 +60,18 @@ nav li{
 
 
 /*Contenido de los posts de pagina principal*/
+.contenedorTarjetas{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 0;
+}
+
+.tarjeta{
+    flex: 80%;
+    padding-left: 5rem;
+}
+
 .tarjeta h1{
     font-size: 1.5rem;
     margin-bottom: 3px;
@@ -67,11 +79,31 @@ nav li{
 .tarjeta article{
     margin-bottom: 50px;
 }
+/*Fin contenido posts*/
+
+
+/*Contenido lateral*/
+.cajaTituloLateral{
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+}
+
+.contenedorNews{
+    padding: 2px 2px 2px 2px;
+    background-color: rgb(225, 241, 234);
+}
+
+/*Fin contenido lateral*/
 
 /*Contenido del footer*/
 footer{
     margin: 0;
     padding: 0;
+    background-color: rgb(73, 75, 72);
 }
 .piePagina{
     display: flex;
