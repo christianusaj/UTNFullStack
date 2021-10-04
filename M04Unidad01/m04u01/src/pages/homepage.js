@@ -1,0 +1,71 @@
+const homepage=(props) => {
+    return(
+        <div class="contenido">
+        <main class="central">
+            <div class="contenedorTarjetas">
+                <div class="tarjeta">
+                    <section>
+                        <h1>Finalistas de los Premios "Comedy Wildlife Photo 2021"</h1>
+                        <div class="imagenTarjeta">
+                            <img src="img/wild_p.jpeg" alt=""/>
+                        </div>
+                            <article>La organización de los Comedy Wildlife Photo Awards anunció a los finalistas de su concurso anual enfocado en promover la conservación de la vida salvaje a través del humor.
+                            </article>
+                            <a href="#">Leer más</a>
+                    </section>
+                    <hr class="separadorTarjetas"/>
+                </div>
+
+                <div class="tarjeta">
+                    <section>
+                        <h1>
+                            Google lanza un método para agrandar imágenes sin perder calidad
+                        </h1>
+                        <div class="imagenTarjeta">
+                            <img src="img/google_p.jpeg" alt=""/>
+                        </div>
+                            <article>
+                                Investigadores de Google desarrollaron una tecnologia basada en AI que puede incrementar la resolución de una imagen a traves de una constante "destruccion y reconstruccion" selectiva de la imagen original.
+                            </article>
+                            <a href="#">Leer más</a>
+                    </section>
+                    <hr class="separadorTarjetas"/>
+                </div>
+                
+            </div>
+        </main>
+        <aside class="lateral">
+            <section>
+                <h2 class="cajaTituloLateral">Acerca de mi</h2>
+                <h3 class="cajaTituloLateralAcercaDe">Nací en Buenos Aires y aquí es donde vivo. Buscaba ideas para hacer una web y decidí hacerla sobre
+                    fotografía. <br/> ¿Soy buen fotografo? en absoluto, solo saco muchas fotos y por lo tanto siempre alguna
+                    queda bien.</h3>
+            </section>
+            <section>
+                <h2 class="cajaTituloLateral">Newsletter</h2>
+                <div class="contenedorNews">
+                    <span class="material-icons-outlined">
+                        mail_outline
+                        </span>
+                    <h3 class="cajaTituloLateralNewsletter">Suscribite a nuestro newsletter para estar al día con las novedades del blog.</h3>
+                    <form action="" class="formNews">
+                        <input type="text" name="nombre" placeholder="Tu nombre" id="nombreNews"/>
+                        <input type="text" name="email" placeholder="Tu email" id="emailNews"/>
+                        <br/>
+                        <input type="submit" value="Suscribir" id="enviarNews"/>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <h2 class="cajaTituloLateral">Redes sociales</h2>
+                <div class="iconosSociales">
+                    <a href="www.facebook.com"><img src="icons/fb.svg" width="30" height="30" alt="Facebook"/></a>
+                    <a href="www.instagram.com"><img src="icons/ig.svg" width="30" height="30"  alt="Instagram"/></a>
+                    <a href="www.twitter.com"><img src="icons/tw.svg" width="30" height="30"  alt="Twitter"/></a>
+                </div>
+            </section>
+        </aside>
+    </div>
+    )
+}
+export default homepage;
