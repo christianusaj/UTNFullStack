@@ -21,7 +21,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lora&family=Noto+Serif&family=Open+Sans&display=swap" rel="stylesheet">
     <!-- Fin Google Fonts -->
     <link rel="stylesheet" href="estilo.css">
-
+    <link rel="stylesheet" href="galeria.css">
     <title>Photo news & images</title>
 </head>
 
@@ -33,48 +33,60 @@
     <nav>
         <ol>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="">Noticias</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="galeria.html">Galería</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ol>
     </nav>
+    <div class="tituloPagina">Galeria</div>
     <div class="contenido">
-        <div class="main">
-            <div class="contenedorTarjetas">
-                <div class="tarjeta">
-                    <section>
-                        <h1>
-                            Google lanza un método para agrandar imágenes sin perder calidad
-                        </H1>
-                        <img src="img/google_p.jpeg" alt="" width="700">
+        <main class="central">
+            <div class="contenedorGaleria">
+                <div class="columnaGaleria">
+                   
                         
-                            <article>Investigadores de Google presentaron una tecnologia basada en AI que permitiría escalar....
-                                <span>Más</span> 
-                            </article>
-                    </section>
-                    <hr class="separadorTarjetas">
-                </div>
+                        
+                    <img src="img/P1000642.jpg" alt="">
                 
-                <div class="tarjeta">
-                    <section>
-                        <h1>Finalistas de los Premios "Comedy Wildlife Photo 2021"</h1>
-                        <img src="img/wild_p.jpeg" alt="" width="700">
-                        
-                            <article>La organización de los Comedy Wildlife Photo Awards anunció a los finalistas de...
-                            <span>Más</span> 
-                            </article>
-                    </section>
-                    <hr class="separadorTarjetas">
+                
+                    <img src="img/P1000643.jpg" alt="">
+                  
+               
+                    <img src="img/P1000805.jpg" alt="">
+                
+                
+                    <img src="img/P1000857.jpg" alt="">
+               
+            
                 </div>
+
+                <div class="columnaGaleria">
+            
+                
+                    <img src="img/P1000897.jpg" alt="">
+                
+                
+                    <img src="img/P1000941.jpg" alt="">
+                 
+                
+                    <img src="img/P1000974.jpg" alt="">
+                
+                
+                    <img src="img/P1010037.jpg" alt="">
+                
+            
+                </div>
+
+                
             
             </div>
-        </div>
-        <div class="lateral">
+        </main>
+        <aside class="lateral">
             <section>
                 <h2 class="cajaTituloLateral">Acerca de mi</h2>
-                <h3>Nací en Buenos Aires y aquí es donde vivo. Buscaba ideas para hacer una web y decidí hacerla sobre
-                    fotografía. ¿Soy buen fotografo? en absoluto, solo saco muchas fotos y por lo tanto siempre alguna
+                <h3 class="cajaTituloLateralAcercaDe">Nací en Buenos Aires y aquí es donde vivo. Buscaba ideas para hacer una web y decidí hacerla sobre
+                    fotografía. <br> ¿Soy buen fotografo? en absoluto, solo saco muchas fotos y por lo tanto siempre alguna
                     queda bien.</h3>
             </section>
             <section>
@@ -83,30 +95,30 @@
                     <span class="material-icons-outlined">
                         mail_outline
                         </span>
-                    <h3>Suscribite a nuestro newsletter para estar al día con las novedades del blog.</h3>
-                    <form action="">
+                    <h3 class="cajaTituloLateralNewsletter">Suscribite a nuestro newsletter para estar al día con las novedades del blog.</h3>
+                    <form action="" class="formNews">
                         <input type="text" name="nombre" placeholder="Tu nombre" id="nombreNews">
                         <input type="text" name="email" placeholder="Tu email" id="emailNews">
+                        <br>
                         <input type="submit" value="Suscribir" id="enviarNews">
                     </form>
                 </div>
             </section>
             <section>
-                <h2 class="cajaTituloLateral">Posts populares</h2>
-                <h3>Posts</h3>
+                <h2 class="cajaTituloLateral">Redes sociales</h2>
+                <div class="iconosSociales">
+                    <a href=""><img src="icons/fb.svg" width="30" height="30" alt="Facebook"></a>
+                    <a href=""><img src="icons/ig.svg" width="30" height="30"  alt="Instagram"></a>
+                    <a href=""><img src="icons/tw.svg" width="30" height="30"  alt="Twitter"></a>
+                </div>
             </section>
-        </div>
+        </aside>
     </div>
 
 
     <footer>
         <div class="piePagina">
-            <div class="columnaIzq">
-                <h2>Links</h2>
-            </div>
-            <div class="columnaDer">
-                <h2>Seguinos en las redes</h2>
-            </div>
+            <p>Usaj Photo by Christian Usaj</p>
         </div>
     </footer>
 </body>

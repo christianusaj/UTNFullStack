@@ -1,0 +1,6 @@
+https://www.dpreview.com/news/0501469519/google-researchers-detail-new-method-upscaling-low-resolution-images-with-impressive-results
+
+https://www.dpreview.com/news/8088666962/slideshow-2021-comedy-wildlife-photo-awards-finalists?slide=4
+
+
+Investigadores de Google desarrollaron una tecnologia basada en AI que puede incrementar la resolución de una imagen a traves de una constante "destruccion y reconstruccion" selectiva de la imagen original.

@@ -21,7 +21,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lora&family=Noto+Serif&family=Open+Sans&display=swap" rel="stylesheet">
     <!-- Fin Google Fonts -->
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="blog.css">
+
     <title>Photo news & images</title>
 </head>
 
@@ -34,61 +34,35 @@
         <ol>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="">Noticias</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Galería</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ol>
     </nav>
-    <div class="tituloPagina">Blog</div>
     <div class="contenido">
         <main class="central">
-            <div class="contenedorTarjetasBlog">
-                <div class="tarjetaBlog">
-                    <section>
-                        <h1>¿Superaron los celulares a las camaras compactas?</h1>
-                        <div class="imagenTarjetaBlog">
-                            <img src="img/wild_p.jpeg" alt="">
-                        </div>
-                            <article>Hubo (¿hay?) un segmento de cámaras compactas que renunia las ventajas de la portabilidad, por caber en un bolsillo y de calidad, por tener sensores de imagen grande...
-                            </article>
-                            <a href="#">Leer más</a>
-                    </section>
-                    
-                </div>
+            <div class="contactoRedes">
+                <h1>¿Dudas, sugerencias, consultas? Enviame un mensaje y te respondo a la brevedad.</h1>
+                <form action="" class="formContacto">
+                    <label for="nombre">Tu nombre</label>
+                    <br>
+                    <input type="text" id="nombre" >
+                    <br>
+                    <label for="email">Tu email</label>
+                    <br>
+                    <input type="text" id="email">
+                    <br>
+                    <label for="mensaje">Mensaje</label>
+                    <br>
+                    <textarea name="area" id="mensaje" cols="30" rows="10" maxlength="300"></textarea>
+                    <br>
+                    <input type="reset" name="borrar" id="botonesContacto" value="Borrar">
+                    <input type="submit" id="botonesContacto" value="Enviar">
+                </form>
 
-                <div class="tarjetaBlog">
-                    <section>
-                        <h1>
-                            Cómo geo etiquetar nuestras fotos. 
-                        </H1>
-                        <div class="imagenTarjetaBlog">
-                            <img src="img/google_p.jpeg" alt="">
-                        </div>
-                            <article>
-                                ¿A quién no le sucedió que luego de cierto tiempo de tomar una foto ya no recuerda dónde fue sacada....
-                            </article>
-                            <a href="#">Leer más</a>
-                    </section>
-                    
-                </div>
-
-                <div class="tarjetaBlog">
-                    <section>
-                        <h1>
-                            Tips básicos para mejorar las fotos con el celular
-                        </H1>
-                        <div class="imagenTarjetaBlog">
-                            <img src="img/google_p.jpeg" alt="">
-                        </div>
-                            <article>Que las cámaras de los telefonos sean cada vez de mejor calidad no significa directamente que las fotos que tomemos sean mejores.
-                            </article>
-                            <a href="#">Leer más</a>
-                    </section>
-                    
-                </div>
-                
-            
             </div>
+
+
         </main>
         <aside class="lateral">
             <section>
