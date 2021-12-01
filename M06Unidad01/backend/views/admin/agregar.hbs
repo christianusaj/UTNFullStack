@@ -1,0 +1,19 @@
+<h1>Agregar</h1>
+<form action="/admin/administrador/agregar" method="post" class="formContacto">
+    <label for="titulo">Titulo</label>
+    <br>
+    <input type="text" id="titl" name="titulo">
+    <br>
+    <label for="contenido">Contenido</label>
+    <br>
+    <input type="text" id="cont" name="contenido">
+    <br>
+    <label for="imagen">Imagen</label>
+    <br>
+    <input type="text" id="img" name="id_imagen">
+    <br>
+    <input type="submit" id="botonesContacto" value="Aceptar">
+</form>
+{{#if error}}
+    <p>{{message}} </p>
+{{/if}}

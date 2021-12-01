@@ -7,4 +7,14 @@ async function getNoticias(){
         //console.log("Prueba");
 }
 
-module.exports={getNoticias}
+async function insertarNoticia(obj){
+    try{
+        var query="insert into noticias set ?";
+        var rows = await pool.query(query, [obj])
+        return rows;
+    } catch (error){
+        console.log(error);
+        throw error;
+    }
+}
+module.exports={getNoticias, insertarNoticia }
