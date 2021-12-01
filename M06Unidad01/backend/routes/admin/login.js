@@ -12,9 +12,8 @@ router.get('/', function(req, res, next) {
 /*logout*/
 router.get('/logout', function(req, res, next){
     req.session.destroy(); //destruye variable de sesion
-    //res.redirect('/admin/login');
     res.render('admin/login', {
-    layout: 'admin/layout'
+        layout: 'admin/layout'
     });
 });
 
@@ -28,7 +27,7 @@ router.post('/', async(req, res, next)=> {
 
         var data=await usuariosModel.getUserByUsernameAndPassword(usuario, password);
 
-        console.log("pruebas")
+        //console.log("pruebas")
         if(data != undefined){
             req.session.id_usuario=data.id; //datos de sesion
             req.session.nombre=data.usuario;

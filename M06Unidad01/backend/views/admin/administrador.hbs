@@ -1,0 +1,32 @@
+<h4>Hola {{usuario}}</h4><a class="btn btn-danger" href="/admin/login/logout">Salir</a>
+
+<div class="row">
+    <div class="col-7">
+        <h3>Noticias</h3>
+    </div>
+    <div class="col-5 text-end">
+        <a class="btn btn-success" href=""><i class="fa fa-plus" aria-hidden="true"></i>Crear</a>
+    </div>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Titulo</th>
+      <th scope="col">Contenido</th>
+      <th scope="col">Imagen</th>
+      <th scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each administrador}}
+    <tr>
+      <th scope="row">{{id_noticias}}</th>
+      <td>{{titulo}} </td>
+      <td>{{contenido}}</td>
+      <td>{{id_imagen}}</td>
+      <td><i class="bi bi-pen"></i><span> </span> <i class="bi bi-trash"></i></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
