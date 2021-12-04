@@ -1,0 +1,60 @@
+.contenedorTarjetasBlog{
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* margin:4% 20% 0 20%; */
+    width: 90%;
+    margin: auto;
+    margin-left: 0;
+    padding: 0 4px;
+    
+}
+
+.tarjetaBlog{
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 20px 0 0;
+    margin-left: 0;
+
+
+}
+
+.imagenTarjetaBlog img{
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.tarjetaBlog h1{
+    font-size: 1.8rem;
+    margin-bottom: 3px;
+    font-family: 'Cormorant', serif;
+    font-weight: lighter;
+}
+
+.tarjetaBlog article{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 800px){
+    .tarjetaBlog{
+        flex: 100%;
+        max-width: 100%;   
+    
+    }
+    .contenedorTarjetasBlog{
+        display: flex;
+    
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        
+    }
+    
+}

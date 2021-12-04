@@ -1,0 +1,22 @@
+<h1>Modificar</h1>
+<form action="/admin/administrador/modificar" method="post" class="formContacto" enctype="multipart/form-data">
+    <input type="hidden" value="{{noticia.id_noticias}}" name="id">
+    <label for="titulo">Titulo</label>
+    <br>
+    <input type="text" id="titl" name="titulo" value="{{noticia.titulo}}">
+    <br>
+    <label for="contenido">Contenido</label>
+    <br>
+    <textarea id="cont" name="contenido">{{noticia.contenido}}</textarea>
+    <br>
+    <label for="imagen">Imagen</label>
+    <br>
+    <input type="file" id="img" name="id_imagen">
+    {{!-- <textarea id="img" name="id_imagen">{{noticia.id_imagen}}</textarea> --}}
+    <br>
+    <input type="hidden" name="img_original" value="{{noticia.id_imagen}}">
+    <input type="submit" id="botonesContacto" value="Actualizar">
+</form>
+{{#if error}}
+    <p>{{message}} </p>
+{{/if}}

@@ -52,4 +52,38 @@ router.get('/eliminar/:id', async(req, res, next)=> {
   res.redirect('/admin/administrador')
 });
 
+
+/*Traer para Modificar*/
+router.get('/modificar/:id', async (req,res, next)=> {
+  var id=req.params.id;
+  console.log(req.params.id);
+  var noticia=await administradorModel.getNoticiasById(id);
+  console.log(req.params.id);
+  res.render('admin/modificar',{
+    layout: 'admin/layout',
+    noticia
+  })
+});
+
+router.post('/modificar', async(req, res, next) =>{
+  try{
+    var obj={
+      titulo: req.body.titulo,
+      contenido: req.body.contenido,
+      id_imagen: req.body.id_imagen
+    }
+    console.log(obj)
+    await administradorModel.modificarNoticias(obj, req.body.id);
+    res.redirect('/admin/administrador');
+  } catch (error){
+    console.log(error)
+    res.render('admin/modificar', {
+      layout: 'admin/layout',
+      error: true,
+      message: 'No se modificó la entrada'
+
+    })
+  }
+})
+
 module.exports = router;
